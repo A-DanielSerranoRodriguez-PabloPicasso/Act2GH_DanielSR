@@ -6,4 +6,23 @@ public class java{
 			array[i] = (int) Math.random()*11;
 		}
 	}
+
+	public void imprimirArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " ");
+		}
+	}
+
+	public void contarRepeticiones(int[] array) {
+		int[] repeticiones = new int[array.length];
+
+		for (int i = 0; i < array.length; i++) {
+			apariciones[i] = 0;
+			for (int j = 0; j < array.length; j++) {
+				if (array[i] == array[j]) {
+					apariciones[i] += 1;
+				}
+			}
+		}
+	}
 }
